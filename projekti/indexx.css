@@ -1,0 +1,85 @@
+.button {
+    background-color: #6b298d;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;  
+    display: inline-block;
+    font-size: 15px;    
+    margin-left: 615px;
+    margin-top: -110px;
+  }
+ .fjalia{
+  margin: auto;
+  width: 60%;
+  margin-top: -60px;
+ }
+
+ .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 3.5px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #4CAF50;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/*Fjalite brenda fotove*/
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 16px;
+}
+
+.foto {
+  position: relative;
+  max-width: 750px;
+  margin: 0 auto;
+  gap: 16px;
+}
+
+.foto img {vertical-align: middle;}
+
+.foto .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
