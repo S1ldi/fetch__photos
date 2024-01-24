@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=3.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- pershkruan kerkest e lidhura nga ky elemt pa humbur kredencialet -->
+    <link rel="stylesheet" href="index.css"/>
+    <title>Photo Fetcher</title>
+    <h1>Photo Fetcher</h1>
+  </head>
+
+  <body>
+    <div>
+      <div class="row mb-2">
+        <div class="col-lg-2"></div>
+
+        <div class="col-lg-4 custom-control custom-switch">
+          <input
+              type="checkbox"
+              class="custom-control-input"
+              id="customSwitch1"
+          />
+          
+          <label
+              class="custom-control-label"
+              for="customSwitch1"
+              onclick="toggleGrayscale()"
+          >
+              <span><h5>Make photo grayscale</h5></span>
+          </label>
+      </div>
+      
+            <div class="col-lg-2 text-right">
+            <button class="custom-btn" onclick="loadImages()">Fetch new photos</button>
+            </div>
+            <div class="col-lg-8"></div>
+        </div>
+
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <img id="img1" class="img-fluid photo bd-placeholder-img"/>
+          <img id="img2" class="img-fluid photo bd-placeholder-img"/>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <img id="img3" class="img-fluid photo bd-placeholder-img" />
+          <img id="img4" class="img-fluid photo bd-placeholder-img" />
+        </div>
+      </div>
+      
+      <script src="indexx.js"></script>
+
+    </div>
+   
+
+  </body>
+</html>
